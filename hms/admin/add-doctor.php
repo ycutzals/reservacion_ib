@@ -25,7 +25,7 @@ echo "<script>window.location.href ='manage-doctors.php'</script>";
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Admin | Add Doctor</title>
+		<title>Admin | Agregar Consejero</title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -85,14 +85,14 @@ error:function (){}
 						<section id="page-title">
 							<div class="row">
 								<div class="col-sm-8">
-									<h1 class="mainTitle">Admin | Add Doctor</h1>
+									<h1 class="mainTitle">Admin | Agregar Consejero</h1>
 																	</div>
 								<ol class="breadcrumb">
 									<li>
 										<span>Admin</span>
 									</li>
 									<li class="active">
-										<span>Add Doctor</span>
+										<span>Agregar Consejero</span>
 									</li>
 								</ol>
 							</div>
@@ -107,7 +107,7 @@ error:function (){}
 										<div class="col-lg-8 col-md-12">
 											<div class="panel panel-white">
 												<div class="panel-heading">
-													<h5 class="panel-title">Add Doctor</h5>
+													<h5 class="panel-title">Agregar Consejero</h5>
 												</div>
 												<div class="panel-body">
 									
@@ -117,7 +117,7 @@ error:function (){}
 																Doctor Specialization
 															</label>
 							<select name="Doctorspecialization" class="form-control" required="true">
-																<option value="">Select Specialization</option>
+																<option value="">Seleccionar especialización</option>
 <?php $ret=mysqli_query($con,"select * from doctorspecilization");
 while($row=mysqli_fetch_array($ret))
 {
@@ -132,37 +132,37 @@ while($row=mysqli_fetch_array($ret))
 
 <div class="form-group">
 															<label for="doctorname">
-																 Doctor Name
+																Nombre del Consejero
 															</label>
-					<input type="text" name="docname" class="form-control"  placeholder="Enter Doctor Name" required="true">
+					<input type="text" name="docname" class="form-control"  placeholder="Ingrese el nombre del Consejero" required="true">
 														</div>
 
 
 <div class="form-group">
 															<label for="address">
-																 Doctor Clinic Address
+																Dirección
 															</label>
-					<textarea name="clinicaddress" class="form-control"  placeholder="Enter Doctor Clinic Address" required="true"></textarea>
+					<textarea name="clinicaddress" class="form-control"  placeholder="Ingrese la dirección del Consejero" required="true"></textarea>
 														</div>
 <div class="form-group">
 															<label for="fess">
-																 Doctor Consultancy Fees
+																 Honorarios 
 															</label>
-					<input type="text" name="docfees" class="form-control"  placeholder="Enter Doctor Consultancy Fees" required="true">
+					<input type="text" name="docfees" class="form-control"  placeholder="Ingrese las tarifas de Consejeria" required="true">
 														</div>
 	
 <div class="form-group">
 									<label for="fess">
-																 Doctor Contact no
+																 Contacto
 															</label>
-					<input type="text" name="doccontact" class="form-control"  placeholder="Enter Doctor Contact no" required="true">
+					<input type="text" name="doccontact" class="form-control"  placeholder="Introduzca el número de telefono" required="true">
 														</div>
 
 <div class="form-group">
 									<label for="fess">
-																 Doctor Email
+																 Correo Electronico
 															</label>
-<input type="email" id="docemail" name="docemail" class="form-control"  placeholder="Enter Doctor Email id" required="true" onBlur="checkemailAvailability()">
+<input type="email" id="docemail" name="docemail" class="form-control"  placeholder="Ingrese la direccion de correo electrónico del Consejero" required="true" onBlur="checkemailAvailability()">
 <span id="email-availability-status"></span>
 </div>
 
@@ -171,22 +171,22 @@ while($row=mysqli_fetch_array($ret))
 														
 														<div class="form-group">
 															<label for="exampleInputPassword1">
-																 Password
+																 Contraseña
 															</label>
-					<input type="password" name="npass" class="form-control"  placeholder="New Password" required="required">
+					<input type="password" name="npass" class="form-control"  placeholder="Nueva contraseña" required="required">
 														</div>
 														
 <div class="form-group">
 															<label for="exampleInputPassword2">
-																Confirm Password
+																Confirmar Contraseña
 															</label>
-									<input type="password" name="cfpass" class="form-control"  placeholder="Confirm Password" required="required">
+									<input type="password" name="cfpass" class="form-control"  placeholder="Confirmar Contraseña" required="required">
 														</div>
 														
 														
 														
 														<button type="submit" name="submit" id="submit" class="btn btn-o btn-primary">
-															Submit
+															Agregar
 														</button>
 													</form>
 												</div>

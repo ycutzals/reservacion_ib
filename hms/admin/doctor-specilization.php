@@ -7,19 +7,19 @@ check_login();
 if(isset($_POST['submit']))
 {
 $sql=mysqli_query($con,"insert into doctorSpecilization(specilization) values('".$_POST['doctorspecilization']."')");
-$_SESSION['msg']="Doctor Specialization added successfully !!";
+$_SESSION['msg']="Especialización agregada con éxito !!";
 }
 
 if(isset($_GET['del']))
 		  {
 		          mysqli_query($con,"delete from doctorSpecilization where id = '".$_GET['id']."'");
-                  $_SESSION['msg']="data deleted !!";
+                  $_SESSION['msg']="datos borrados!";
 		  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Admin | Doctor Specialization</title>
+		<title>Admin | Consejero Especialización</title>
 	
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -50,14 +50,14 @@ if(isset($_GET['del']))
 						<section id="page-title">
 							<div class="row">
 								<div class="col-sm-8">
-									<h1 class="mainTitle">Admin | Add Doctor Specialization</h1>
+									<h1 class="mainTitle">Admin | Consejero Especialización</h1>
 																	</div>
 								<ol class="breadcrumb">
 									<li>
 										<span>Admin</span>
 									</li>
 									<li class="active">
-										<span>Add Doctor Specialization</span>
+										<span>Añadir especialización de Consejero</span>
 									</li>
 								</ol>
 							</div>
@@ -72,7 +72,7 @@ if(isset($_GET['del']))
 										<div class="col-lg-6 col-md-12">
 											<div class="panel panel-white">
 												<div class="panel-heading">
-													<h5 class="panel-title">Doctor Specialization</h5>
+													<h5 class="panel-title">Especialización Consejero</h5>
 												</div>
 												<div class="panel-body">
 								<p style="color:red;"><?php echo htmlentities($_SESSION['msg']);?>
@@ -80,16 +80,16 @@ if(isset($_GET['del']))
 													<form role="form" name="dcotorspcl" method="post" >
 														<div class="form-group">
 															<label for="exampleInputEmail1">
-																Doctor Specialization
+																Especialización de Consejero
 															</label>
-							<input type="text" name="doctorspecilization" class="form-control"  placeholder="Enter Doctor Specialization">
+							<input type="text" name="doctorspecilization" class="form-control"  placeholder="Ingresar Especialización Consejero">
 														</div>
 												
 														
 														
 														
 														<button type="submit" name="submit" class="btn btn-o btn-primary">
-															Submit
+															Agregar
 														</button>
 													</form>
 												</div>
@@ -140,7 +140,7 @@ while($row=mysqli_fetch_array($sql))
 												<div class="visible-md visible-lg hidden-sm hidden-xs">
 							<a href="edit-doctor-specialization.php?id=<?php echo $row['id'];?>" class="btn btn-transparent btn-xs" tooltip-placement="top" tooltip="Edit"><i class="fa fa-pencil"></i></a>
 													
-	<a href="doctor-specilization.php?id=<?php echo $row['id']?>&del=delete" onClick="return confirm('Are you sure you want to delete?')"class="btn btn-transparent btn-xs tooltips" tooltip-placement="top" tooltip="Remove"><i class="fa fa-times fa fa-white"></i></a>
+	<a href="doctor-specilization.php?id=<?php echo $row['id']?>&del=delete" onClick="return confirm('¿Estás seguro de que quieres eliminar?')"class="btn btn-transparent btn-xs tooltips" tooltip-placement="top" tooltip="Remove"><i class="fa fa-times fa fa-white"></i></a>
 												</div>
 												<div class="visible-xs visible-sm hidden-md hidden-lg">
 													<div class="btn-group" dropdown is-open="status.isopen">
