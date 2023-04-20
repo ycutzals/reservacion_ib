@@ -18,3 +18,6 @@ Login Details for Doctor: test@demo.com/Test@123
 
 
 https://www.youtube.com/watch?v=Iq8LPQqwRUg
+actividades
+administrar-actividades
+editar-actividades

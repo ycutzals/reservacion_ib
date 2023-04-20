@@ -69,6 +69,7 @@
 											<span class="title"> Administrar Usuarios </span>
 										</a>
 									</li>
+
 									
 								</ul>
 								</li>
@@ -79,7 +80,7 @@
 											<i class="ti-user"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Pacientes </span><i class="icon-arrow"></i>
+											<span class="title"> Actividades </span><i class="icon-arrow"></i>
 										</div>
 									</div>
 								</a>
@@ -88,6 +89,18 @@
 									<li>
 										<a href="manage-patient.php">
 											<span class="title">Administrar pacientes </span>
+										</a>
+									</li>
+
+									<li>
+										<a href="administrar-actividades.php">
+											<span class="title"> Agregar Actividades </span>
+										</a>
+									</li>
+
+									<li>
+										<a href="actividades.php">
+											<span class="title"> Administrar Actividades </span>
 										</a>
 									</li>
 									

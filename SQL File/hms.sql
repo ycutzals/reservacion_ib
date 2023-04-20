@@ -2,7 +2,8 @@
 SQLyog Ultimate v12.09 (64 bit)
 MySQL - 10.4.22-MariaDB : Database - hms
 *********************************************************************
-*/
+*/
+
 
 /*!40101 SET NAMES utf8 */;
 
@@ -175,6 +176,22 @@ CREATE TABLE `tblpatient` (
 /*Data for the table `tblpatient` */
 
 insert  into `tblpatient`(`ID`,`Docid`,`PatientName`,`PatientContno`,`PatientEmail`,`PatientGender`,`PatientAdd`,`PatientAge`,`PatientMedhis`,`CreationDate`,`UpdationDate`) values (1,1,'Manisha Jha',4558968789,'test@gmail.com','Female','\"\"J&K Block J-127, Laxmi Nagar New Delhi',26,'She is diabetic patient','2019-11-04 16:38:06','2019-11-06 01:48:05'),(2,5,'Raghu Yadav',9797977979,'raghu@gmail.com','Male','ABC Apartment Mayur Vihar Ph-1 New Delhi',39,'No','2019-11-05 05:40:13','2019-11-05 06:53:45'),(3,7,'Mansi',9878978798,'jk@gmail.com','Female','\"fdghyj',46,'No','2019-11-05 05:49:41','2019-11-05 06:58:59'),(4,7,'Manav Sharma',9888988989,'sharma@gmail.com','Male','L-56,Ashok Nagar New Delhi-110096',45,'He is long suffered by asthma','2019-11-06 09:33:54','2019-11-06 09:34:31'),(5,9,'John',1234567890,'john@test.com','male','Test ',25,'THis is sample text for testing.','2019-11-10 13:49:24',NULL);
+
+/*Table structure for table `tblactividades` */
+
+DROP TABLE IF EXISTS `tblactividades`;
+
+CREATE TABLE `tblactividades` (
+  `ID` int(10) NOT NULL AUTO_INCREMENT,
+  `Docid` int(10) DEFAULT NULL,
+  `nomactividad` varchar(200) DEFAULT NULL,
+  `lugar` varchar(200) DEFAULT NULL,
+  `sociedad` varchar(50) DEFAULT NULL,
+  `CreationDate` timestamp NULL DEFAULT current_timestamp(),
+  `UpdationDate` timestamp NULL DEFAULT NULL ON UPDATE current_timestamp(),
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+
 
 /*Table structure for table `userlog` */
 
