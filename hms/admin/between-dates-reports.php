@@ -9,7 +9,7 @@ check_login();
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>B/w dates reports | Admin</title>
+		<title>Reporte</title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -42,16 +42,9 @@ check_login();
 						<section id="page-title">
 							<div class="row">
 								<div class="col-sm-8">
-									<h1 class="mainTitle">Between Dates | Reports</h1>
+									<h1 class="mainTitle">Reporte por fechas</h1>
 																	</div>
-								<ol class="breadcrumb">
-									<li>
-										<span>Between Dates</span>
-									</li>
-									<li class="active">
-										<span>Reports</span>
-									</li>
-								</ol>
+								
 							</div>
 						</section>
 						<!-- end: PAGE TITLE -->
@@ -64,21 +57,21 @@ check_login();
 										<div class="col-lg-8 col-md-12">
 											<div class="panel panel-white">
 												<div class="panel-heading">
-													<h5 class="panel-title">Between Dates Reports</h5>
+													<h5 class="panel-title">Informes entre fechas</h5>
 												</div>
 												<div class="panel-body">
 									
 													<form role="form" method="post" action="betweendates-detailsreports.php">
 														<div class="form-group">
 															<label for="exampleInputPassword1">
-																 From Date:
+																 Fecha inicio:
 															</label>
 					<input type="date" class="form-control" name="fromdate" id="fromdate" value="" required='true'>
 														</div>
 		
 													<div class="form-group">
 															<label for="exampleInputPassword1">
-																 To Date::
+																 Fecha Fin:
 															</label>
 					 <input type="date" class="form-control" name="todate" id="todate" value="" required='true'>
 
@@ -86,7 +79,7 @@ check_login();
 														
 														
 														<button type="submit" name="submit" id="submit" class="btn btn-o btn-primary">
-															Submit
+															Buscar
 														</button>
 													</form>
 												</div>

@@ -34,7 +34,7 @@
 								<ul class="sub-menu">
 									<li>
 										<a href="doctor-specilization.php">
-											<span class="title"> Consejero Especialización </span>
+											<span class="title"> Agregar Especialización </span>
 										</a>
 									</li>
 									<li>
@@ -51,28 +51,6 @@
 								</ul>
 								</li>
 
-				<li>
-								<a href="javascript:void(0)">
-									<div class="item-content">
-										<div class="item-media">
-											<i class="ti-user"></i>
-										</div>
-										<div class="item-inner">
-											<span class="title"> Usuarios </span><i class="icon-arrow"></i>
-										</div>
-									</div>
-								</a>
-								<ul class="sub-menu">
-									
-									<li>
-										<a href="manage-users.php">
-											<span class="title"> Administrar Usuarios </span>
-										</a>
-									</li>
-
-									
-								</ul>
-								</li>
 								<li>
 								<a href="javascript:void(0)">
 									<div class="item-content">
@@ -86,11 +64,11 @@
 								</a>
 								<ul class="sub-menu">
 									
-									<li>
+									<!--li>
 										<a href="manage-patient.php">
 											<span class="title">Administrar pacientes </span>
 										</a>
-									</li>
+									</li-->
 
 									<li>
 										<a href="administrar-actividades.php">
@@ -200,7 +178,7 @@
 
 									
 									
-								</ul>
+								<!--/ul>
 								<li>
 								<a href="patient-search.php">
 									<div class="item-content">
@@ -213,7 +191,7 @@
 									</div>
 								</a>
 							</li>
-								</li>
+								</li-->
 
 						</ul>
 						<!-- end: CORE FEATURES -->

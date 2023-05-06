@@ -27,7 +27,7 @@ $_SESSION['login']=$_POST['username'];
 $uip=$_SERVER['REMOTE_ADDR'];
 $status=0;
 mysqli_query($con,"insert into userlog(username,userip,status) values('".$_SESSION['login']."','$uip','$status')");
-$_SESSION['errmsg']="Invalid username or password";
+$_SESSION['errmsg']="correo o contraseña invalido";
 $extra="user-login.php";
 $host  = $_SERVER['HTTP_HOST'];
 $uri  = rtrim(dirname($_SERVER['PHP_SELF']),'/\\');
@@ -73,12 +73,12 @@ exit();
 							</p>
 							<div class="form-group">
 								<span class="input-icon">
-									<input type="text" class="form-control" name="username" placeholder="Username">
+									<input type="text" class="form-control" name="username" placeholder="Correo electrónico">
 									<i class="fa fa-user"></i> </span>
 							</div>
 							<div class="form-group form-actions">
 								<span class="input-icon">
-									<input type="password" class="form-control password" name="password" placeholder="Password">
+									<input type="password" class="form-control password" name="password" placeholder="Contraseña">
 									<i class="fa fa-lock"></i>
 									 </span><a href="forgot-password.php">
 									 Has olvidado tu contraseña ?
@@ -100,7 +100,7 @@ exit();
 					</form>
 
 					<div class="copyright">
-						&copy; <span class="current-year"></span><span class="text-bold text-uppercase"> IB</span>. <span>Reservados todos los derechos</span>
+						&copy; <span class="current-year"></span><span class="text-bold text-uppercase"></span>.<span>Iglesia Bethlehem</span>
 					</div>
 			
 				</div>

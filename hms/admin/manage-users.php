@@ -14,7 +14,7 @@ if(isset($_GET['del']))
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Admin | Manage Users</title>
+		<title>Usuarios</title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -47,14 +47,7 @@ if(isset($_GET['del']))
 								<div class="col-sm-8">
 									<h1 class="mainTitle">Admin | Administrar Usuarios</h1>
 																	</div>
-								<ol class="breadcrumb">
-									<li>
-										<span>Admin</span>
-									</li>
-									<li class="active">
-										<span>Administrar Usuarios</span>
-									</li>
-								</ol>
+								
 							</div>
 						</section>
 						<!-- end: PAGE TITLE -->
@@ -105,7 +98,7 @@ while($row=mysqli_fetch_array($sql))
 												<div class="visible-md visible-lg hidden-sm hidden-xs">
 							
 													
-	<a href="manage-users.php?id=<?php echo $row['id']?>&del=delete" onClick="return confirm('Are you sure you want to delete?')"class="btn btn-transparent btn-xs tooltips" tooltip-placement="top" tooltip="Remove"><i class="fa fa-times fa fa-white"></i></a>
+	<a href="manage-users.php?id=<?php echo $row['id']?>&del=delete" onClick="return confirm('¿Estás segura de que quieres eliminar?')"class="btn btn-transparent btn-xs tooltips" tooltip-placement="top" tooltip="Remove"><i class="fa fa-times fa fa-white"></i></a>
 												</div>
 												<div class="visible-xs visible-sm hidden-md hidden-lg">
 													<div class="btn-group" dropdown is-open="status.isopen">

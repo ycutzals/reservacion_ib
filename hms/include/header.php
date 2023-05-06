@@ -22,13 +22,14 @@
 						<ul class="nav navbar-right">
 							<!-- start: MESSAGES DROPDOWN -->
 								<li  style="padding-top:2% ">
+							
 								<h2>IGLESIA EVANGELICA C.A. BETHLEHEM</h2>
 							</li>
 						
 						
 							<li class="dropdown current-user">
 								<a href class="dropdown-toggle" data-toggle="dropdown">
-									<img src="assets/images/images.jpg"> <span class="username">
+									<img src="assets/images/usuario2.png"> <span class="username">
 
 
 

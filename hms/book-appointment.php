@@ -18,7 +18,7 @@ $docstatus=1;
 $query=mysqli_query($con,"insert into appointment(doctorSpecialization,doctorId,userId,consultancyFees,appointmentDate,appointmentTime,userStatus,doctorStatus) values('$specilization','$doctorid','$userid','$fees','$appdate','$time','$userstatus','$docstatus')");
 	if($query)
 	{
-		echo "<script>alert('Your appointment successfully booked');</script>";
+		echo "<script>alert('Su cita se reservado con éxito');</script>";
 	}
 
 }
@@ -174,7 +174,8 @@ while($row=mysqli_fetch_array($ret))
 															Tiempo
 													
 															</label>
-			<input class="form-control" name="apptime" id="timepicker1" required="required">eg : 10:00 PM
+			<input class="form-control" name="apptime" id="timepicker1" required="required">Horarios de atencion: 09:00 a 13:00 - 15:00 a 18:00, LUNES A VIERNES
+
 														</div>														
 														
 														<button type="submit" name="submit" class="btn btn-o btn-primary">

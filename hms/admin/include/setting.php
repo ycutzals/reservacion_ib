@@ -3,7 +3,7 @@
 					<i class="fa fa-spin fa-gear"></i>
 				</button>
 				<div class="panel-heading">
-					Style Selector
+					Style Selector11
 				</div>
 				<div class="panel-body">
 					<!-- start: FIXED HEADER -->
@@ -24,7 +24,7 @@
 					<!-- end: FIXED SIDEBAR -->
 					<!-- start: CLOSED SIDEBAR -->
 					<div class="setting-box clearfix">
-						<span class="setting-title pull-left">Closed sidebar</span>
+						<span class="setting-title pull-left">	</span>
 						<span class="setting-switch pull-right">
 							<input type="checkbox" class="js-switch" id="closed-sidebar" />
 						</span>

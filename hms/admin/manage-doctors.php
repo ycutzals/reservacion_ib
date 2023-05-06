@@ -15,7 +15,7 @@ if(isset($_GET['del']))
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Admin | Administrar Consejeros</title>
+		<title>Administrar Consejeros</title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -48,14 +48,7 @@ if(isset($_GET['del']))
 								<div class="col-sm-8">
 									<h1 class="mainTitle">Admin | Administrar Consejeros</h1>
 																	</div>
-								<ol class="breadcrumb">
-									<li>
-										<span>Admin</span>
-									</li>
-									<li class="active">
-										<span>Administrar Consejeros</span>
-									</li>
-								</ol>
+								
 							</div>
 						</section>
 						<!-- end: PAGE TITLE -->

@@ -7,7 +7,7 @@ check_login();
 if(isset($_GET['cancel']))
 		  {
 		          mysqli_query($con,"update appointment set userStatus='0' where id = '".$_GET['id']."'");
-                  $_SESSION['msg']="Your appointment canceled !!";
+                  $_SESSION['msg']="¡Tu cita cancelada!";
 		  }
 ?>
 <!DOCTYPE html>
@@ -104,12 +104,12 @@ while($row=mysqli_fetch_array($sql))
 }
 if(($row['userStatus']==0) && ($row['doctorStatus']==1))  
 {
-	echo "Cancel by You";
+	echo "Cancelado por ti";
 }
 
 if(($row['userStatus']==1) && ($row['doctorStatus']==0))  
 {
-	echo "Cancel by Doctor";
+	echo "Cancelado por Consejero";
 }
 
 
@@ -121,10 +121,10 @@ if(($row['userStatus']==1) && ($row['doctorStatus']==0))
 { ?>
 
 													
-	<a href="appointment-history.php?id=<?php echo $row['id']?>&cancel=update" onClick="return confirm('Are you sure you want to cancel this appointment ?')"class="btn btn-transparent btn-xs tooltips" title="Cancel Appointment" tooltip-placement="top" tooltip="Remove">Cancel</a>
+	<a href="appointment-history.php?id=<?php echo $row['id']?>&cancel=update" onClick="return confirm('¿Estás seguro de que deseas cancelar esta cita?')"class="btn btn-transparent btn-xs tooltips" title="Cancel Appointment" tooltip-placement="top" tooltip="Remove">Cancel</a>
 	<?php } else {
 
-		echo "Canceled";
+		echo "Canceleda";
 		} ?>
 												</div>
 												<div class="visible-xs visible-sm hidden-md hidden-lg">

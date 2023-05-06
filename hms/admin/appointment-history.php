@@ -8,7 +8,7 @@ check_login();
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>PACIENTES | HISTORIAL DE CITAS</title>
+		<title>Historial de citas</title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -41,14 +41,7 @@ check_login();
 								<div class="col-sm-8">
 									<h1 class="mainTitle">USUARIOS | HISTORIAL DE CITAS</h1>
 																	</div>
-								<ol class="breadcrumb">
-									<li>
-										<span>Usiarios </span>
-									</li>
-									<li class="active">
-										<span>Historial de Citas</span>
-									</li>
-								</ol>
+								
 							</div>
 						</section>
 						<!-- end: PAGE TITLE -->

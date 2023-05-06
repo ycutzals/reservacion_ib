@@ -8,7 +8,7 @@ check_login();
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Admin | Registros de sesiones Consejero</title>
+		<title>Registros de sesion</title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -39,16 +39,9 @@ check_login();
 						<section id="page-title">
 							<div class="row">
 								<div class="col-sm-8">
-									<h1 class="mainTitle">Admin  | Registro de sesiones de Consejeros</h1>
+									<h1 class="mainTitle">Admin  | Registro de sesion de Consejeros</h1>
 																	</div>
-								<ol class="breadcrumb">
-									<li>
-										<span>Admin </span>
-									</li>
-									<li class="active">
-										<span>Registro de sesiones de Consejeros</span>
-									</li>
-								</ol>
+								
 							</div>
 						</section>
 						<!-- end: PAGE TITLE -->
@@ -65,9 +58,7 @@ check_login();
 										<thead>
 											<tr>
 												<th class="center">#</th>
-												<th class="hidden-xs">Identificación de usuario</th>
-												<th>Nombre de usuario</th>
-												<th>IP de usuario</th>
+												<th>Correo electronico</th>	
 												<th>Hora de inicio de sesión</th>
 												<th>Hora de cierre de sesión </th>
 												<th> Estado </th>
@@ -77,6 +68,7 @@ check_login();
 										</thead>
 										<tbody>
 <?php
+
 $sql=mysqli_query($con,"select * from doctorslog ");
 $cnt=1;
 while($row=mysqli_fetch_array($sql))
@@ -85,9 +77,7 @@ while($row=mysqli_fetch_array($sql))
 
 											<tr>
 												<td class="center"><?php echo $cnt;?>.</td>
-												<td class="hidden-xs"><?php echo $row['uid'];?></td>
 												<td class="hidden-xs"><?php echo $row['username'];?></td>
-												<td><?php echo $row['userip'];?></td>
 												<td><?php echo $row['loginTime'];?></td>
 												<td><?php echo $row['logout'];?>
 												</td>

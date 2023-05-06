@@ -14,7 +14,7 @@ $_SESSION['name']=$name;
 $_SESSION['email']=$email;
 header('location:reset-password.php');
 } else {
-echo "<script>alert('Invalid details. Please try with valid details');</script>";
+echo "<script>alert('Los datos ingresado no son válidos');</script>";
 echo "<script>window.location.href ='forgot-password.php'</script>";
 
 
@@ -27,7 +27,7 @@ echo "<script>window.location.href ='forgot-password.php'</script>";
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Pateint  Password Recovery</title>
+		<title>Recuperacion de contraseña</title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -44,50 +44,48 @@ echo "<script>window.location.href ='forgot-password.php'</script>";
 		<div class="row">
 			<div class="main-login col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
 				<div class="logo margin-top-30">
-				<a href="../index.html"><h2> IB | Patient Password Recovery</h2></a>
+				<a href="../index.html"><h2> IB | Recuperación de la contraseña-usuario</h2></a>
 				</div>
 
 				<div class="box-login">
 					<form class="form-login" method="post">
 						<fieldset>
-							<legend>
-								Patient Password Recovery
-							</legend>
+							
 							<p>
-								Please enter your Email and password to recover your password.<br />
+								Ingrese los datos que se le solicita<br />
 					
 							</p>
 
 							<div class="form-group form-actions">
 								<span class="input-icon">
-									<input type="text" class="form-control" name="fullname" placeholder="Registred Full Name">
+									<input type="text" class="form-control" name="fullname" placeholder="Nombre completo registrado">
 									<i class="fa fa-lock"></i>
 									 </span>
 							</div>
 
 							<div class="form-group">
 								<span class="input-icon">
-									<input type="email" class="form-control" name="email" placeholder="Registred Email">
+									<input type="email" class="form-control" name="email" placeholder="correo electronico registrado">
 									<i class="fa fa-user"></i> </span>
 							</div>
 
 							<div class="form-actions">
 								
 								<button type="submit" class="btn btn-primary pull-right" name="submit">
-									Reset <i class="fa fa-arrow-circle-right"></i>
+									Cambiar <i class="fa fa-arrow-circle-right"></i>
 								</button>
 							</div>
 							<div class="new-account">
-								Already have an account? 
+							¿Ya tienes una cuenta?
 								<a href="user-login.php">
-									Log-in
+									Iniciar sesión
 								</a>
 							</div>
 						</fieldset>
 					</form>
 
 					<div class="copyright">
-						&copy; <span class="current-year"></span><span class="text-bold text-uppercase"> IB</span>. <span>All rights reserved</span>
+						&copy; <span class="current-year"></span><span class="text-bold text-uppercase"></span>. <span>Iglesia Bethlehem</span>
 					</div>
 			
 				</div>

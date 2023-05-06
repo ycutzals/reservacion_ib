@@ -17,7 +17,7 @@ var FormValidator = function () {
             } else {
                 return false;
             }
-        }, 'Please select a day, month, and year');
+        }, 'Seleccione un día, mes y año');
         $('#form').validate({
             errorElement: "span", // contain the error msg in a span tag
             errorClass: 'help-block',
@@ -114,7 +114,7 @@ var FormValidator = function () {
             } else {
                 return false;
             }
-        }, 'This field is required.');
+        }, 'El campo es obligatorio');
         form2.validate({
             errorElement: "span", // contain the error msg in a small tag
             errorClass: 'help-block',

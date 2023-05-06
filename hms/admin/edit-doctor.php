@@ -60,14 +60,7 @@ $msg="Datos del Consejero actualizados con éxito";
 								<div class="col-sm-8">
 									<h1 class="mainTitle">Admin | Editar detalles de Consejero</h1>
 																	</div>
-								<ol class="breadcrumb">
-									<li>
-										<span>Admin</span>
-									</li>
-									<li class="active">
-										<span>Editar detalles de Consejeros</span>
-									</li>
-								</ol>
+								
 							</div>
 						</section>
 						<!-- end: PAGE TITLE -->
@@ -89,9 +82,9 @@ while($data=mysqli_fetch_array($sql))
 {
 ?>
 <h4><?php echo htmlentities($data['doctorName']);?> - Perfil</h4>
-<p><b>Registro de Perfil. Fecha: </b><?php echo htmlentities($data['creationDate']);?></p>
+<p><b>Registro: </b><?php echo htmlentities($data['creationDate']);?></p>
 <?php if($data['updationDate']){?>
-<p><b>Fecha de última actualización del perfil: </b><?php echo htmlentities($data['updationDate']);?></p>
+<p><b>Ultima actualización: </b><?php echo htmlentities($data['updationDate']);?></p>
 <?php } ?>
 <hr />
 													<form role="form" name="adddoc" method="post" onSubmit="return valid();">

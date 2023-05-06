@@ -22,7 +22,7 @@ echo "<script>alert('Datos del consejero actualizados con éxito');</script>";
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Consejero | Editar detalles</title>
+		<title>Editar Consejero</title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -54,14 +54,7 @@ echo "<script>alert('Datos del consejero actualizados con éxito');</script>";
 								<div class="col-sm-8">
 									<h1 class="mainTitle">Consejero | Editar detalles</h1>
 																	</div>
-								<ol class="breadcrumb">
-									<li>
-										<span>Consejero</span>
-									</li>
-									<li class="active">
-										<span>Editar detalles</span>
-									</li>
-								</ol>
+								
 							</div>
 						</section>
 						<!-- end: PAGE TITLE -->
@@ -90,7 +83,7 @@ while($data=mysqli_fetch_array($sql))
 													<form role="form" name="adddoc" method="post" onSubmit="return valid();">
 														<div class="form-group">
 															<label for="DoctorSpecialization">
-																Doctor Specialization
+																Especialización Consejero
 															</label>
 							<select name="Doctorspecialization" class="form-control" required="required">
 					<option value="<?php echo htmlentities($data['specilization']);?>">

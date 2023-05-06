@@ -18,7 +18,7 @@ exit();
 }
 else
 {
-$_SESSION['errmsg']="Invalid username or password";
+$_SESSION['errmsg']="usuario o contraseña invalido";
 $extra="index.php";
 $host  = $_SERVER['HTTP_HOST'];
 $uri  = rtrim(dirname($_SERVER['PHP_SELF']),'/\\');
@@ -88,7 +88,7 @@ exit();
 					</form>
 
 					<div class="copyright">
-						&copy; <span class="current-year"></span><span class="text-bold text-uppercase"> IB</span>. <span>All rights reserved</span>
+						&copy; <span class="current-year"></span><span class="text-bold text-uppercase"></span>. <span>Iglesia Bethlehem</span>
 					</div>
 			
 				</div>

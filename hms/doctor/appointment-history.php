@@ -46,14 +46,7 @@ mysqli_query($con,"update appointment set doctorStatus='0' where id ='".$_GET['i
 								<div class="col-sm-8">
 									<h1 class="mainTitle">Consejero | Historial de citas</h1>
 																	</div>
-								<ol class="breadcrumb">
-									<li>
-										<span>Consejero </span>
-									</li>
-									<li class="active">
-										<span>Historial de citas</span>
-									</li>
-								</ol>
+								
 							</div>
 						</section>
 						<!-- end: PAGE TITLE -->
@@ -104,12 +97,12 @@ while($row=mysqli_fetch_array($sql))
 }
 if(($row['userStatus']==0) && ($row['doctorStatus']==1))  
 {
-	echo "Cancel by Patient";
+	echo "Cancelado por usuario";
 }
 
 if(($row['userStatus']==1) && ($row['doctorStatus']==0))  
 {
-	echo "Cancel by you";
+	echo "Cancelar por ti";
 }
 
 
@@ -121,7 +114,7 @@ if(($row['userStatus']==1) && ($row['doctorStatus']==0))
 { ?>
 
 													
-	<a href="appointment-history.php?id=<?php echo $row['id']?>&cancel=update" onClick="return confirm('Are you sure you want to cancel this appointment ?')"class="btn btn-transparent btn-xs tooltips" title="Cancel Appointment" tooltip-placement="top" tooltip="Remove">Cancelar</a>
+	<a href="appointment-history.php?id=<?php echo $row['id']?>&cancel=update" onClick="return confirm('¿Estás seguro de que deseas cancelar esta cita?')"class="btn btn-transparent btn-xs tooltips" title="Cancel Appointment" tooltip-placement="top" tooltip="Remove">Cancelar</a>
 	<?php } else {
 
 		echo "Cancelado";

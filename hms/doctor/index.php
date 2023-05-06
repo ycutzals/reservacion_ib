@@ -26,7 +26,7 @@ $_SESSION['dlogin']=$_POST['username'];
 $uip=$_SERVER['REMOTE_ADDR'];
 $status=0;
 mysqli_query($con,"insert into doctorslog(username,userip,status) values('".$_SESSION['dlogin']."','$uip','$status')");
-$_SESSION['errmsg']="Invalid username or password";
+$_SESSION['errmsg']="usuario o contraseña invalido";
 $extra="index.php";
 $uri  = rtrim(dirname($_SERVER['PHP_SELF']),'/\\');
 header("location:http://$host$uri/$extra");
@@ -39,7 +39,7 @@ exit();
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Doctor Login</title>
+		<title>Inicio sesion</title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -71,12 +71,12 @@ exit();
 							</p>
 							<div class="form-group">
 								<span class="input-icon">
-									<input type="text" class="form-control" name="username" placeholder="Username">
+									<input type="text" class="form-control" name="username" placeholder="correo electrónico">
 									<i class="fa fa-user"></i> </span>
 							</div>
 							<div class="form-group form-actions">
 								<span class="input-icon">
-									<input type="password" class="form-control password" name="password" placeholder="Password">
+									<input type="password" class="form-control password" name="password" placeholder="contraseña">
 									<i class="fa fa-lock"></i>
 									 </span>
 									 <a href="forgot-password.php">
@@ -95,7 +95,7 @@ exit();
 					</form>
 
 					<div class="copyright">
-						&copy; <span class="current-year"></span><span class="text-bold text-uppercase"> HMS</span>. <span>All rights reserved</span>
+						&copy; <span class="current-year"></span><span class="text-bold text-uppercase"> </span>. <span>Iglesia Bethlehem</span>
 					</div>
 			
 				</div>

@@ -9,7 +9,7 @@ check_login();
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Admin | Panel</title>
+		<title>Admin</title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -44,14 +44,7 @@ check_login();
 								<div class="col-sm-8">
 									<h1 class="mainTitle">Admin | Panel</h1>
 																	</div>
-								<ol class="breadcrumb">
-									<li>
-										<span>Admin</span>
-									</li>
-									<li class="active">
-										<span>Panel</span>
-									</li>
-								</ol>
+								
 							</div>
 						</section>
 						<!-- end: PAGE TITLE -->
@@ -99,7 +92,7 @@ $num_rows1 = mysqli_num_rows($result1);
 									<div class="panel panel-white no-radius text-center">
 										<div class="panel-body">
 											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-terminal fa-stack-1x fa-inverse"></i> </span>
-											<h2 class="StepTitle"> Equipo</h2>
+											<h2 class="StepTitle"> Citas</h2>
 											
 											<p class="links cl-effect-1">
 												<a href="book-appointment.php">
@@ -116,7 +109,8 @@ $num_rows2 = mysqli_num_rows($sql);
 									</div>
 								</div>
 
-<div class="col-sm-4">
+<!-- menue en desarrollo
+	div class="col-sm-4">
 									<div class="panel panel-white no-radius text-center">
 										<div class="panel-body">
 											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-smile-o fa-stack-1x fa-inverse"></i> </span>
@@ -134,7 +128,7 @@ Total Patients :<?php echo htmlentities($num_rows);
 											</p>
 										</div>
 									</div>
-								</div>
+								</div fin -->
 
 
 

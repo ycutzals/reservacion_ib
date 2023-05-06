@@ -5,7 +5,7 @@
 						
 						<!-- start: MAIN NAVIGATION MENU -->
 						<div class="navbar-title">
-							<span> Principal</span>
+							<span> Menu Principal</span>
 						</div>
 						<ul class="main-navigation-menu">
 							<li>
@@ -34,7 +34,7 @@
 									</div>
 								</a>
 							</li>
-							<li>
+							<!--li>
 								<a href="javascript:void(0)">
 									<div class="item-content">
 										<div class="item-media">

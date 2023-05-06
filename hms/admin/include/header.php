@@ -28,7 +28,7 @@
 						
 							<li class="dropdown current-user">
 								<a href class="dropdown-toggle" data-toggle="dropdown">
-									<img src="assets/images/images.jpg" > <span class="username">
+									<img src="assets/images/adm.png" > <span class="username">
 
 
 
@@ -40,12 +40,12 @@
 								
 									<li>
 										<a href="change-password.php">
-											Change Password
+										Cambiar la contraseña
 										</a>
 									</li>
 									<li>
 										<a href="logout.php">
-											Log Out
+										Cerrar sesión
 										</a>
 									</li>
 								</ul>

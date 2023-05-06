@@ -9,7 +9,7 @@ check_login();
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Admin | View Patients</title>
+		<title>Busqueda</title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -37,17 +37,8 @@ check_login();
 <section id="page-title">
 <div class="row">
 <div class="col-sm-8">
-<h1 class="mainTitle">Admin | View Patients</h1>
-</div>
-<ol class="breadcrumb">
-<li>
-<span>Admin</span>
-</li>
-<li class="active">
-<span>View Patients</span>
-</li>
-</ol>
-</div>
+<h1 class="mainTitle">Admin | Ver usuario-consejero</h1>
+
 </section>
 <div class="container-fluid container-fullw bg-white">
 <div class="row">
@@ -56,13 +47,13 @@ check_login();
 
 <div class="form-group">
 <label for="doctorname">
-Search by Name/Mobile No.
+Buscar por nombre/número de móvil
 </label>
 <input type="text" name="searchdata" id="searchdata" class="form-control" value="" required='true'>
 </div>
 
 <button type="submit" name="search" id="submit" class="btn btn-o btn-primary">
-Search
+Buscar
 </button>
 </form>
 <?php
@@ -71,17 +62,17 @@ if(isset($_POST['search']))
 
 $sdata=$_POST['searchdata'];
   ?>
-  <h4 align="center">Result against "<?php echo $sdata;?>" keyword </h4>
+  <h4 align="center">Resultado en contrados,"<?php echo $sdata;?>" palabra clave </h4>
 <table class="table table-hover" id="sample-table-1">
 <thead>
 <tr>
 <th class="center">#</th>
-<th>Patient Name</th>
-<th>Patient Contact Number</th>
-<th>Patient Gender </th>
-<th>Creation Date </th>
-<th>Updation Date </th>
-<th>Action</th>
+<th>Nombre Paciente</th>
+<th>Teléfono</th>
+<th>Genero </th>
+<th>Fecha de creación </th>
+<th>Fecha de actualización </th>
+<th>Detalles</th>
 </tr>
 </thead>
 <tbody>
@@ -112,7 +103,7 @@ while($row=mysqli_fetch_array($sql))
 $cnt=$cnt+1;
 } } else { ?>
   <tr>
-    <td colspan="8"> No record found against this search</td>
+    <td colspan="8"> No se encontró ningún registro de esta búsqueda</td>
 
   </tr>
    

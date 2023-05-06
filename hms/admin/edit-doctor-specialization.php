@@ -16,7 +16,7 @@ $_SESSION['msg']="Doctor Specialization updated successfully !!";
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Admin | Edit Doctor Specialization</title>
+		<title>Admin | Editar Consejero</title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -47,7 +47,7 @@ $_SESSION['msg']="Doctor Specialization updated successfully !!";
 						<section id="page-title">
 							<div class="row">
 								<div class="col-sm-8">
-									<h1 class="mainTitle">Admin | Edit Doctor Specialization</h1>
+									<h1 class="mainTitle">Admin | Editar especialización de Consejero</h1>
 																	</div>
 								<ol class="breadcrumb">
 									<li>

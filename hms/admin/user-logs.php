@@ -8,7 +8,7 @@ check_login();
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Admin | User Session Logs</title>
+		<title>Registro sesion</title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -41,14 +41,7 @@ check_login();
 								<div class="col-sm-8">
 									<h1 class="mainTitle">Admin  | User Session Logs</h1>
 																	</div>
-								<ol class="breadcrumb">
-									<li>
-										<span>Admin </span>
-									</li>
-									<li class="active">
-										<span>User Session Logs</span>
-									</li>
-								</ol>
+	
 							</div>
 						</section>
 						<!-- end: PAGE TITLE -->
@@ -65,12 +58,11 @@ check_login();
 										<thead>
 											<tr>
 												<th class="center">#</th>
-												<th class="hidden-xs">User id</th>
-												<th>Username</th>
-												<th>User IP</th>
-												<th>Login time</th>
-												<th>Logout Time </th>
-												<th> Status </th>
+												<th class="hidden-xs">id</th>
+												<th>Correo electrónico</th>
+												<th>Hora de inicio de sesión</th>
+												<th>Hora de cierre de sesión </th>
+												<th> Estado </th>
 												
 												
 											</tr>
@@ -87,7 +79,6 @@ while($row=mysqli_fetch_array($sql))
 												<td class="center"><?php echo $cnt;?>.</td>
 												<td class="hidden-xs"><?php echo $row['uid'];?></td>
 												<td class="hidden-xs"><?php echo $row['username'];?></td>
-												<td><?php echo $row['userip'];?></td>
 												<td><?php echo $row['loginTime'];?></td>
 												<td><?php echo $row['logout'];?>
 												</td>
@@ -95,11 +86,11 @@ while($row=mysqli_fetch_array($sql))
 												<td>
 <?php if($row['status']==1)
 {
-	echo "Success";
+	echo "Éxito";
 }
 else
 {
-	echo "Failed";
+	echo "Fallida";
 }?>
 
 </td>

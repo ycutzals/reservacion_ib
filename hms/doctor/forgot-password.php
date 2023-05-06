@@ -14,7 +14,7 @@ $_SESSION['cnumber']=$contactno;
 $_SESSION['email']=$email;
 header('location:reset-password.php');
 } else {
-echo "<script>alert('Invalid details. Please try with valid details');</script>";
+echo "<script>alert('Los datos ingresado no son válidos');</script>";
 echo "<script>window.location.href ='forgot-password.php'</script>";
 
 
@@ -60,14 +60,14 @@ echo "<script>window.location.href ='forgot-password.php'</script>";
 
 							<div class="form-group form-actions">
 								<span class="input-icon">
-									<input type="text" class="form-control" name="contactno" placeholder="Registred Contact Number">
+									<input type="text" class="form-control" name="contactno" placeholder="Numero de celular registrado">
 									<i class="fa fa-lock"></i>
 									 </span>
 							</div>
 
 							<div class="form-group">
 								<span class="input-icon">
-									<input type="email" class="form-control" name="email" placeholder="Registred Email">
+									<input type="email" class="form-control" name="email" placeholder="correo electrónico">
 									<i class="fa fa-user"></i> </span>
 							</div>
 
@@ -87,7 +87,7 @@ echo "<script>window.location.href ='forgot-password.php'</script>";
 					</form>
 
 					<div class="copyright">
-						&copy; <span class="current-year"></span><span class="text-bold text-uppercase"> HMS</span>. <span>All rights reserved</span>
+						&copy; <span class="current-year"></span><span class="text-bold text-uppercase"> </span>. <span>Iglesia Bethlehem</span>
 					</div>
 			
 				</div>

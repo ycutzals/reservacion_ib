@@ -41,7 +41,7 @@ function valid()
 {
  if(document.passwordreset.password.value!= document.passwordreset.password_again.value)
 {
-alert("Password and Confirm Password Field do not match  !!");
+alert("Las contraseñas no coinciden");
 document.passwordreset.password_again.focus();
 return false;
 }
@@ -97,7 +97,7 @@ return true;
 					</form>
 
 					<div class="copyright">
-						&copy; <span class="current-year"></span><span class="text-bold text-uppercase"> HMS</span>. <span>All rights reserved</span>
+						&copy; <span class="current-year"></span><span class="text-bold text-uppercase"> </span>. <span>Iglesia Bethlehem</span>
 					</div>
 			
 				</div>

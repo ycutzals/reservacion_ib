@@ -16,7 +16,7 @@ $password=md5($_POST['npass']);
 $sql=mysqli_query($con,"insert into doctors(specilization,doctorName,address,docFees,contactno,docEmail,password) values('$docspecialization','$docname','$docaddress','$docfees','$doccontactno','$docemail','$password')");
 if($sql)
 {
-echo "<script>alert('Doctor info added Successfully');</script>";
+echo "<script>alert('consejero agregado con éxito');</script>";
 echo "<script>window.location.href ='manage-doctors.php'</script>";
 
 }
@@ -25,7 +25,7 @@ echo "<script>window.location.href ='manage-doctors.php'</script>";
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Admin | Agregar Consejero</title>
+		<title>Agregar Consejero</title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -46,7 +46,7 @@ function valid()
 {
  if(document.adddoc.npass.value!= document.adddoc.cfpass.value)
 {
-alert("Password and Confirm Password Field do not match  !!");
+alert("Las contraseñas no coinciden");
 document.adddoc.cfpass.focus();
 return false;
 }
@@ -114,7 +114,7 @@ error:function (){}
 													<form role="form" name="adddoc" method="post" onSubmit="return valid();">
 														<div class="form-group">
 															<label for="DoctorSpecialization">
-																Doctor Specialization
+																Especializaciones
 															</label>
 							<select name="Doctorspecialization" class="form-control" required="true">
 																<option value="">Seleccionar especialización</option>

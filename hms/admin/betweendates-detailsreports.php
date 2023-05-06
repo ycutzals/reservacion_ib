@@ -37,38 +37,31 @@ check_login();
 <section id="page-title">
 <div class="row">
 <div class="col-sm-8">
-<h1 class="mainTitle">Admin | View Patients</h1>
+<h1 class="mainTitle">Admin | Ver Usuarios</h1>
 </div>
-<ol class="breadcrumb">
-<li>
-<span>Admin</span>
-</li>
-<li class="active">
-<span>View Patients</span>
-</li>
-</ol>
+
 </div>
 </section>
 <div class="container-fluid container-fullw bg-white">
 <div class="row">
 <div class="col-md-12">
-<h4 class="tittle-w3-agileits mb-4">Between dates reports</h4>
+<h4 class="tittle-w3-agileits mb-4">Informes entre fechas</h4>
 <?php
 $fdate=$_POST['fromdate'];
 $tdate=$_POST['todate'];
 
 ?>
-<h5 align="center" style="color:blue">Report from <?php echo $fdate?> to <?php echo $tdate?></h5>
+<h5 align="center" style="color:blue">Informe de <?php echo $fdate?> al	 <?php echo $tdate?></h5>
 	
 <table class="table table-hover" id="sample-table-1">
 <thead>
 <tr>
 <th class="center">#</th>
-<th>Patient Name</th>
-<th>Patient Contact Number</th>
-<th>Patient Gender </th>
-<th>Creation Date </th>
-<th>Updation Date </th>
+<th>Nobre Paciente</th>
+<th>Teléfono</th>
+<th>Genero </th>
+<th>Fecha de creación</th>
+<th>Fecha de actualización </th>
 <th>Action</th>
 </tr>
 </thead>

@@ -24,7 +24,7 @@ $_SESSION['msg1']="Old Password not match !!";
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Doctor  | change Password</title>
+		<title>Cambiar Contraseña</title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -63,7 +63,7 @@ return false;
 }
 else if(document.chngpwd.npass.value!= document.chngpwd.cfpass.value)
 {
-alert("Password and Confirm Password Field do not match  !!");
+alert("Las contraseñas no coinciden");
 document.chngpwd.cfpass.focus();
 return false;
 }
@@ -86,16 +86,9 @@ return true;
 						<section id="page-title">
 							<div class="row">
 								<div class="col-sm-8">
-									<h1 class="mainTitle">Doctor | Change Password</h1>
+									<h1 class="mainTitle">Consejero | Cambiar la Contraseña</h1>
 																	</div>
-								<ol class="breadcrumb">
-									<li>
-										<span>Doctor</span>
-									</li>
-									<li class="active">
-										<span>Change Password</span>
-									</li>
-								</ol>
+								
 							</div>
 						</section>
 						<!-- end: PAGE TITLE -->
@@ -108,7 +101,7 @@ return true;
 										<div class="col-lg-8 col-md-12">
 											<div class="panel panel-white">
 												<div class="panel-heading">
-													<h5 class="panel-title">Change Password</h5>
+													<h5 class="panel-title">Modificar</h5>
 												</div>
 												<div class="panel-body">
 								<p style="color:red;"><?php echo htmlentities($_SESSION['msg1']);?>
@@ -116,28 +109,28 @@ return true;
 													<form role="form" name="chngpwd" method="post" onSubmit="return valid();">
 														<div class="form-group">
 															<label for="exampleInputEmail1">
-																Current Password
+																Contraseña Actual
 															</label>
-							<input type="password" name="cpass" class="form-control"  placeholder="Enter Current Password">
+							<input type="password" name="cpass" class="form-control"  placeholder="ingrese su contraseña actual">
 														</div>
 														<div class="form-group">
 															<label for="exampleInputPassword1">
-																New Password
+																Contraseña Nueva
 															</label>
-					<input type="password" name="npass" class="form-control"  placeholder="New Password">
+					<input type="password" name="npass" class="form-control"  placeholder="Contraseña Nueva">
 														</div>
 														
 <div class="form-group">
 															<label for="exampleInputPassword1">
-																Confirm Password
+																Confirmar Contraseña
 															</label>
-									<input type="password" name="cfpass" class="form-control"  placeholder="Confirm Password">
+									<input type="password" name="cfpass" class="form-control"  placeholder="Confirmar contraseña">
 														</div>
 														
 														
 														
 														<button type="submit" name="submit" class="btn btn-o btn-primary">
-															Submit
+															Cambiar
 														</button>
 													</form>
 												</div>

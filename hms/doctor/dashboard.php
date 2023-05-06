@@ -9,7 +9,7 @@ check_login();
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Consejero  | Panel</title>
+		<title>Consejero  </title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -38,24 +38,17 @@ check_login();
 				<!-- end: TOP NAVBAR -->
 				<div class="main-content" >
 					<div class="wrap-content container" id="container">
-						<!-- start: PAGE TITLE -->
+						<!-- titulo de pagina-->
 						<section id="page-title">
 							<div class="row">
 								<div class="col-sm-8">
 									<h1 class="mainTitle">Consejero | Panel</h1>
 																	</div>
-								<ol class="breadcrumb">
-									<li>
-										<span>Consejero</span>
-									</li>
-									<li class="active">
-										<span>Panel</span>
-									</li>
-								</ol>
+								
 							</div>
 						</section>
 						<!-- end: PAGE TITLE -->
-						<!-- start: BASIC EXAMPLE -->
+						<!-- opciones panel -->
 							<div class="container-fluid container-fullw bg-white">
 							<div class="row">
 								<div class="col-sm-4">

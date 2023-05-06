@@ -13,18 +13,18 @@ $num=mysqli_fetch_array($sql);
 if($num>0)
 {
  $con=mysqli_query($con,"update admin set password='".$_POST['npass']."', updationDate='$currentTime' where username='".$_SESSION['login']."'");
-$_SESSION['msg1']="Password Changed Successfully !!";
+$_SESSION['msg1']="¡Contraseña cambiada con éxito!";
 }
 else
 {
-$_SESSION['msg1']="Old Password not match !!";
+$_SESSION['msg1']="La contraseña anterior no coincide";
 }
 }
 ?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Admin | change Password</title>
+		<title>Cambio de contraseña</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -50,25 +50,25 @@ function valid()
 {
 if(document.chngpwd.cpass.value=="")
 {
-alert("Current Password Filed is Empty !!");
+alert("La contraseña actual archivada está vacía");
 document.chngpwd.cpass.focus();
 return false;
 }
 else if(document.chngpwd.npass.value=="")
 {
-alert("New Password Filed is Empty !!");
+alert("La nueva contraseña archivada está vacía");
 document.chngpwd.npass.focus();
 return false;
 }
 else if(document.chngpwd.cfpass.value=="")
 {
-alert("Confirm Password Filed is Empty !!");
+alert("Confirmar que la contraseña archivada está vacía");
 document.chngpwd.cfpass.focus();
 return false;
 }
 else if(document.chngpwd.npass.value!= document.chngpwd.cfpass.value)
 {
-alert("Password and Confirm Password Field do not match  !!");
+alert("Las contraseñas no coinciden");
 document.chngpwd.cfpass.focus();
 return false;
 }
@@ -92,16 +92,9 @@ return true;
 						<section id="page-title">
 							<div class="row">
 								<div class="col-sm-8">
-									<h1 class="mainTitle">Admin | Change Password</h1>
+									<h1 class="mainTitle">Admin | Cambiar contraseña</h1>
 																	</div>
-								<ol class="breadcrumb">
-									<li>
-										<span>Admin</span>
-									</li>
-									<li class="active">
-										<span>Change Password</span>
-									</li>
-								</ol>
+								
 							</div>
 						</section>
 						<!-- end: PAGE TITLE -->
@@ -114,7 +107,7 @@ return true;
 										<div class="col-lg-8 col-md-12">
 											<div class="panel panel-white">
 												<div class="panel-heading">
-													<h5 class="panel-title">Change Password</h5>
+													<h5 class="panel-title">Cambiar la contraseña</h5>
 												</div>
 												<div class="panel-body">
 								<p style="color:red;"><?php echo htmlentities($_SESSION['msg1']);?>
@@ -122,28 +115,28 @@ return true;
 													<form role="form" name="chngpwd" method="post" onSubmit="return valid();">
 														<div class="form-group">
 															<label for="exampleInputEmail1">
-																Current Password
+																Contraseña actual
 															</label>
-							<input type="password" name="cpass" class="form-control"  placeholder="Enter Current Password">
+							<input type="password" name="cpass" class="form-control"  placeholder="Contraseña actual">
 														</div>
 														<div class="form-group">
 															<label for="exampleInputPassword1">
-																New Password
+																Contraseña nueva
 															</label>
-					<input type="password" name="npass" class="form-control"  placeholder="New Password">
+					<input type="password" name="npass" class="form-control"  placeholder="Nueva contraseña">
 														</div>
 														
 <div class="form-group">
 															<label for="exampleInputPassword1">
-																Confirm Password
+																Confirmar contraseña
 															</label>
-									<input type="password" name="cfpass" class="form-control"  placeholder="Confirm Password">
+									<input type="password" name="cfpass" class="form-control"  placeholder="Confirmar contraseña">
 														</div>
 														
 														
 														
 														<button type="submit" name="submit" class="btn btn-o btn-primary">
-															Submit
+															Actualizar
 														</button>
 													</form>
 												</div>
