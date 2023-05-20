@@ -93,8 +93,19 @@ $cnt=$cnt+1;
 </div>
 </div>
 </div>
+<center>
+		<div class="container">
+    <h3>Descargar Reporte</h3>
+    <br>    
+    <div class="row">
+        <div id="content" class="col-lg-12">
+<a class="btn btn-primary" href="repactividad.php"><i class="fa fa-download"></i> Descargar PDF</a>
+        </div>
+    </div>  
+ <br>  </center>
 </div>
 </div>
+
 			<!-- start: FOOTER -->
 	<?php include('include/footer.php');?>
 			<!-- end: FOOTER -->

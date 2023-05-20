@@ -7,7 +7,7 @@ if(!empty($_POST["emailid"])) {
 		$count=mysqli_num_rows($result);
 if($count>0)
 {
-echo "<span style='color:red'> Email already exists .</span>";
+echo "<span style='color:red'> El correo electronico ya existe.</span>";
  echo "<script>$('#submit').prop('disabled',true);</script>";
 } else{
 	

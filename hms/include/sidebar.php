@@ -57,7 +57,7 @@
 									</div>
 								</a-->
 							</li>
-							<li>
+							<!--li>
 								<a href="peticion.php">
 									<div class="item-content">
 										<div class="item-media">
@@ -70,7 +70,7 @@
 								</a>
 							</li>
 
-							<!--a href="actividades.php">
+							<a href="actividades.php">
 									<div class="item-content">
 										<div class="item-media">
 											<i class="ti-list"></i>

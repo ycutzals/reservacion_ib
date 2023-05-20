@@ -8,7 +8,7 @@ check_login();
 if(isset($_GET['del']))
 		  {
 		          mysqli_query($con,"delete from users where id = '".$_GET['id']."'");
-                  $_SESSION['msg']="data deleted !!";
+                  $_SESSION['msg']="¡datos borrados!";
 		  }
 ?>
 <!DOCTYPE html>

@@ -21,3 +21,16 @@ https://www.youtube.com/watch?v=Iq8LPQqwRUg
 actividades
 administrar-actividades
 editar-actividades
+
+all rights reserved}
+
+
+
+
+git add .
+git commit -m "integracion de vistas de administrar actividades en rol administrador" 
+git push origin main
+
+
+username
+
